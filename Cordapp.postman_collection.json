@@ -1,0 +1,264 @@
+{
+	"info": {
+		"_postman_id": "986f59b1-f20d-4983-b4e1-699a655c49ff",
+		"name": "Cordapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12423922"
+	},
+	"item": [
+		{
+			"name": "Statuses",
+			"item": [
+				{
+					"name": "status check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{partyA}}/status",
+							"host": [
+								"{{partyA}}"
+							],
+							"path": [
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "servertime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{partyA}}/servertime",
+							"host": [
+								"{{partyA}}"
+							],
+							"path": [
+								"servertime"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addresses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{partyA}}/addresses",
+							"host": [
+								"{{partyA}}"
+							],
+							"path": [
+								"addresses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "identities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{partyA}}/identities",
+							"host": [
+								"{{partyA}}"
+							],
+							"path": [
+								"identities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "platformversion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{partyA}}/platformversion",
+							"host": [
+								"{{partyA}}"
+							],
+							"path": [
+								"platformversion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "notaries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{partyA}}/notaries",
+							"host": [
+								"{{partyA}}"
+							],
+							"path": [
+								"notaries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "flows",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{partyA}}/flows",
+							"host": [
+								"{{partyA}}"
+							],
+							"path": [
+								"flows"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "states",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{partyA}}/states",
+							"host": [
+								"{{partyA}}"
+							],
+							"path": [
+								"states"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "peers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{partyA}}/peers",
+							"host": [
+								"{{partyA}}"
+							],
+							"path": [
+								"peers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "me",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{partyA}}/me",
+							"host": [
+								"{{partyA}}"
+							],
+							"path": [
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rpas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{partyA}}/ious",
+							"host": [
+								"{{partyA}}"
+							],
+							"path": [
+								"ious"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my-rpas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{partyA}}/my-ious",
+							"host": [
+								"{{partyA}}"
+							],
+							"path": [
+								"my-ious"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Issue RPA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{partyA}}/create-rpa?amount=10000000&discountRate=0.02&tenor=90&liquidityProvider=O=PartyA,L=London,C=GB&coreEnterprise=O=PartyB,L=New%20York,C=US",
+					"host": [
+						"{{partyA}}"
+					],
+					"path": [
+						"create-rpa"
+					],
+					"query": [
+						{
+							"key": "amount",
+							"value": "10000000"
+						},
+						{
+							"key": "discountRate",
+							"value": "0.02"
+						},
+						{
+							"key": "tenor",
+							"value": "90"
+						},
+						{
+							"key": "liquidityProvider",
+							"value": "O=PartyA,L=London,C=GB"
+						},
+						{
+							"key": "coreEnterprise",
+							"value": "O=PartyB,L=New%20York,C=US"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
